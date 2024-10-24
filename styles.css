@@ -177,17 +177,17 @@ footer > div > * {
 @media print {
  nav, footer, #download-btn {
 	display: none !important;
- }
+	}
 
  * {
 	 border: none !important;
 	 -webkit-print-color-adjust: exact;
 	 print-color-adjust: exact;
- }
+	}
 
- .main-header {
+	.main-header {
 		padding: var(--default-padding);
- }
+	}
 }
 
 @media (max-width: 1024px) {
