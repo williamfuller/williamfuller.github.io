@@ -1,3 +1,4 @@
+cd src
 rm *.br
-brotli -q 11 -k *.html
-brotli -q 11 -k *.css
+brotli --best --keep *.html 
+brotli --best --keep *.css
