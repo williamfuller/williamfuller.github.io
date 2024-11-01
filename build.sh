@@ -1,3 +1,6 @@
+set -x
+
+git pull
 cd src
 rm *.br
 brotli --best --keep *.html 
