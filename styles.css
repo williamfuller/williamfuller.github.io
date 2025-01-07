@@ -175,18 +175,26 @@ footer > div > * {
 }
 
 @media print {
- nav, footer, #download-btn {
-	display: none !important;
+	:root {
+		--default-padding: 0.6rem;
 	}
 
- * {
-	 border: none !important;
-	 -webkit-print-color-adjust: exact;
-	 print-color-adjust: exact;
+	nav, footer, #download-btn {
+		display: none !important;
+	}
+
+	* {
+		border: none !important;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
 	}
 
 	.main-header {
 		padding: var(--default-padding);
+	}
+
+	h1 {
+		text-decoration: wavy underline 1px;
 	}
 }
 
@@ -205,12 +213,12 @@ footer > div > * {
 		grid-template-columns: 1fr;		
 	}
 
-	#projects > div{
+	#projects > div {
 		border-bottom: var(--default-border) !important;
 		border-right: none !important;
 	}
 	
-	#projects > div:last-child{
+	#projects > div:last-child {
 		border-bottom: none !important;
 	}
 }
