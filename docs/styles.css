@@ -187,7 +187,6 @@ footer > div > * {
 @media print {
 	:root {
 		--default-padding: 1rem;
-		font-size: small;
 	}
 
 	*{
