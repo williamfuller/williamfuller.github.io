@@ -101,22 +101,32 @@ a:hover {
 	color: #555;
 }
 
-#experience-skills {
+#main-content {
 	display:flex;
 }
 
-#experience-skills h1 {
+#main-content h1 {
 	padding: var(--default-padding);
 	border-bottom: var(--default-border);
+}
+
+#resume {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 }
 
 #experiences {
 	max-width: calc(2*var(--content-width)/3);
 	border-right: var(--default-border);
+	grid-row: 1 / span 2;
 }
 
-#skills, #experiences {
- flex-grow: 1;
+#skills, #experiences, #education {
+	flex-grow: 1;
+}
+
+#skills {
+	border-top: var(--default-border);
 }
 
 #skills ul {
@@ -138,7 +148,7 @@ a:hover {
 	padding-bottom: var(--default-padding);
 }
 
-.experience, .skill-section {
+.experience, .skill-section, .education {
 	padding: var(--default-padding);
 }
 
@@ -176,7 +186,7 @@ footer > div > * {
 
 @media print {
 	:root {
-		--default-padding: 0.6rem;
+		--default-padding: 0.5rem;
 	}
 
 	nav, footer, #download-btn {
@@ -199,6 +209,11 @@ footer > div > * {
 }
 
 @media (max-width: 1024px) {
+	#resume {
+		display: flex;
+		flex-direction: column;
+	}
+
 	#experience-skills {
 		flex-wrap: wrap;
 	}
