@@ -1,49 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="preload" href="styles.css" as="style" type="text/css" >
-		<link rel="preload" href="inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="styles.css" as="style" type="text/css" >
+	<link rel="preload" href="Roboto-Slab-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="Roboto-Slab-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-		<link rel="stylesheet" href="styles.css">
-		<link rel="icon" href="favicon.svg">
-		<title>William Fuller</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="favicon.svg">
+	<title>William Fuller</title>
 </head>
 <body>
-	<header class="container">
-		<nav class="content-block">
-			<div class="boxed-start">
-				<p>William Fuller</p>
-			</div>
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="resume.html">resume</a></li>
-				<li><a href="projects.html">projects</a></li>
+	<div class="A4">
+		<header class="flex-small-padding">
+			<h1>William Fuller</h1>
+			<p>Versatile software engineer with experience in full-stack web development, machine learning, and algorithm design. Passionately curious, I am always seeking opportunities to learn and challenge myself as an engineer. In my spare time, I enjoy traveling, running, bouldering, and swimming.</p>
+			<ul class="flex-between">
+				<li>Paris, France</li>
+				<li><a href="mailto:williamfulle@gmail.com">williamfulle@gmail.com</a></li>
+				<li><a href="https://www.linkedin.com/in/williamfuller1608">Linkedin</a></li>
+				<li><a href="https://github.com/williamfuller">Github</a></li>
+				<li><a href="https://williamfuller.eu">website</a></li>
 			</ul>
-		</nav>
-	</header>
-
-	<main>
-
-		<section class="container">
-			<article class="main-header content-block">
-				<h1>Hi I'm William</h1>
-				<p>A software engineer from Paris. I love learning and exploring how the objects around us function and interact.</p>
-				<p>This is simply my corner of the internet, where I can share my random project and experiment with the web. I self host some forms of this <a href="https://williamfuller.eu">website</a> (the non github.io ones) so it most likely won't have 100% uptime.</p>
-			</article>
+		</header>
+	
+		<section>
+			<h3>Experience</h3>
+			<div class="flex-large-padding">
+				<div class="flex-small-padding">
+					<p><strong>Super G</strong></p>
+					<div class="flex-between">
+						<p>Software Engineer</p>
+						<p>Feb 2023 - Present</p>
+					</div>
+					<ul class="indent">
+						<li>Joined as the second hire to drive and accelerate end-to-end development in a startup environment with a team of under 10 people.</li>
+						<li>Led multiple projects from initial conception to implementation and delivery, aligning solutions with company goals and client needs.</li>
+						<li><strong>Tools</strong> : Go, PostgreSQL, React</li>
+					</ul>
+				</div>
+	
+				<div class="flex-small-padding">
+					<p><strong>Instem / Notocord</strong></p>
+					<div class="flex-between">
+						<p>Machine learning / Research Engineer</p>
+						<p>Oct 2021 - Jan 2023</p>
+					</div>
+					<ul class="indent">
+						<li>Developed and prototyped machine learning / deep learning models in Pytorch and successfully integrated them into a C# production environment.</li>
+						<li>Conducted advanced research to create biological analyzers, employing deep learning and machine learning methods to support drug research and development.</li>
+						<li><strong>Tools</strong> : C#, Python, Matlab, Pytorch, ONNX</li>
+					</ul>
+				</div>
+	
+				<div class="flex-small-padding">
+					<p><strong>Tictactrip</strong></p>
+					<div class="flex-between">
+						<p>Data scientist / backend developer </p>
+						<p class="dates">Oct 2020 - Mar 2021</p>
+					</div>
+					<ul class="indent">
+						<li>Built and automated data-cleaning tool that streamlined data processing, significantly improving search accuracy and system performance, while reducing computational costs.</li>
+						<li>Took full ownership of all data processing and integration of new provider data. Enhancing the platform's efficiency and expanding its service offerings.</li>
+						<li><strong>Tools</strong> : Python, NodeJs, PostgreSQL, Docker</li>
+					</ul>
+				</div>
+			</div>
+	
 		</section>
-
-	</main>
-
-	<footer class="container">
-		<div class="content-block">
-			<p class="subtext">
-				made in the 🇪🇺
-			</p>
-		</div>
-	</footer>
+	
+		<section>
+			<h3>Education</h3>
+	
+			<div>
+				<p><strong>Imperial College London</strong></p>
+				<div class="flex-between">
+					<p>Msc Signal Processing and Communications</p>
+					<p>Oct 2018 - Oct 2019</p>
+				</div>
+			</div>
+	
+			<div>
+				<p><strong>University of Kent</strong></p>
+				<div class="flex-between">
+					<p>BEng Electonic and Communications Engineering</p>
+					<p>Spet 2015 - Jul 2018</p>
+				</div>
+			</div>
+	
+		</section>
+		
+		<section class="flex-between">
+			<div>
+				<h3>Skills</h3>
+				<ul class="details">
+				  <li>Go</li>
+				  <li>React</li>
+				  <li>PostgreSQL</li>
+				  <li>Typescript / Javascript</li>
+				  <li>Python</li>
+				  <li>C#</li>
+				  <li>Git</li>
+				  <li>Docker</li>
+				  <li>Linux</li>
+				</ul>
+			</div>
+	
+			<div>
+				<h3>Languages</h3>
+				<ul class="details">
+				  <li>English (native)</li>
+				  <li>French (native)</li>
+				  <li>Spanish (B1)</li>
+				</ul>
+			</div>
+		</section>
+	</div>
 
 </body>
 </html>
