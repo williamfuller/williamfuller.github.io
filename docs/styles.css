@@ -46,10 +46,20 @@ section {
 	padding-bottom: var(--padding-large);
 }
 
+header > p {
+	text-indent: 1.5rem;
+}
+
 .A4 {
 	border-top: solid 1rem var(--color);
   max-width:210mm;
 	padding: 8mm 16mm 27mm 16mm;
+}
+
+.flex-center {
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
 }
 
 .flex-small-padding {
