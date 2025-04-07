@@ -16,7 +16,7 @@
 	<article class="A4">
 		<header class="flex-small-padding">
 			<h1>William Fuller</h1>
-			<p>Results-oriented Software engineer with 5 years experience in full-stack web development, machine learning, and algorithm design. Proven track record of leading projects from conception to delivery, driving both product innovation and team success. Committed to continuous learning and professional growth, with a passion for tackling complex engineering challenges.</p>
+			<p class="text-indent">Results-oriented Software engineer with 5 years experience in full-stack web development, machine learning, and algorithm design. Proven track record of leading projects from conception to delivery, driving both product innovation and team success. Committed to continuous learning and professional growth, with a passion for tackling complex engineering challenges.</p>
 			<ul class="flex-between">
 				<li class="flex-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -33,14 +33,14 @@
 
 		<section>
 			<h3>Experience</h3>
-			<div class="flex-large-padding">
-				<div class="flex-small-padding">
+			<div class="flex-small-padding">
+				<div class="">
 					<p><strong>Super G</strong></p>
 					<div class="flex-between">
 						<p>Software Engineer</p>
 						<p>Feb 2023 - Present</p>
 					</div>
-					<p class="subtext">Super G provide an entreprise resource management (ERP) solution for beer brewers and winemakers offering tools for production, inverntory, invoicing and payment management.</p>
+					<p class="subtext">ERP solution for beer brewers and winemakers offering tools for production, inverntory, invoicing and payment management.</p>
 					<ul class="padding-left">
 						<li>Founding Engineer recruited to drive and accelerate end-to-end development, enhancing the product offering.</li>
 						<li>Led multiple projects from initial conception to implementation and delivery, aligning solutions with company goals and client needs.</li>
@@ -54,7 +54,7 @@
 						<p>Machine Learning / Research Engineer</p>
 						<p>Oct 2020 - Jan 2023</p>
 					</div>
-					<p class="subtext">Instem / Notocord provide a software suite of biological analyser use for pre-clinical trials in drug development.</p>
+					<p class="subtext">Software suite of biological analyser use for pre-clinical trials in drug development.</p>
 					<ul class="padding-left">
 						<li>Developed and prototyped machine learning / deep learning models from conception in pytorch to integrated a C# production environment.</li>
 						<li>Conducted advanced research to create biological analyzers, employing deep learning and machine learning methods to support drug research and development.</li>
@@ -68,7 +68,7 @@
 						<p>Data Scientist / backend Developer </p>
 						<p class="dates">Oct 2019 - Jun 2021</p>
 					</div>
-					<p class="subtext">Tictactrip provide a bus / train ticket purchasing platform offering the possibility to buy all in one tickets from origin to destination combining buses and trains from different providers.</p>
+					<p class="subtext">Bus and train ticket purchasing platform offering all in one tickets from combining buses and trains from different providers.</p>
 					<ul class="padding-left">
 						<li>Built and automated data-cleaning tools that streamlined data processing, significantly improving search accuracy and system performance, while reducing computational costs.</li>
 						<li>Took full ownership of all data processing tasks relevant to integration of new provider data. Enhancing the platform's efficiency and expanding its service offerings.</li>
@@ -82,66 +82,71 @@
 		<section>
 			<h3>Education</h3>
 	
-			<div>
-				<p><strong>Imperial College London</strong></p>
-				<div class="flex-between">
-					<p>Msc Signal Processing and Communications</p>
-					<p>Oct 2018 - Oct 2019</p>
+			<div class="flex-small-padding">
+				<div>
+					<p><strong>Imperial College London</strong></p>
+					<div class="flex-between">
+						<p>Msc Signal Processing and Communications</p>
+						<p>Oct 2018 - Oct 2019</p>
+					</div>
+					<p>Adaptive Signal Processing and Machine Intelligence, Digital Image Processing, Pattern Recognition, Probability and Stochastic Processes</p>
+					<p><strong>Grade : </strong>67% — Merit</p>
 				</div>
-				<p><strong>Main modules : </strong>Adaptive Signal Processing and Machine Intelligence, Digital Image Processing, Pattern Recognition, Probability and Stochastic Processes</p>
-				<p class="subtext"><strong>Grade : </strong>67% — Merit</p>
-			</div>
 	
-			<div>
-				<p><strong>University of Kent</strong></p>
-				<div class="flex-between">
-					<p>BEng Electronic and Communications Engineering</p>
-					<p>Sept 2015 - Jul 2018</p>
+				<div>
+					<p><strong>University of Kent</strong></p>
+					<div class="flex-between">
+						<p>BEng Electronic and Communications Engineering</p>
+						<p>Sept 2015 - Jul 2018</p>
+					</div>
+					<p>Communication Systems, Engineering Mathematics, Signals and Systems, Embedded Computer Systems, Digital Signal Processing and Control</p>
+					<p><strong>Grade : </strong> 86% — First class distinction <strong>Award : </strong> IET Prize 2018</p>
 				</div>
-				<p><strong>Main modules : </strong>Communication Systems, Engineering Mathematics, Signals and Systems, Embedded Computer Systems, Digital Signal Processing and Control</p>
-				<p class="subtext"><strong>Grade : </strong> 86% — First class distinction <strong>Award : </strong> IET Prize 2018</p>
 			</div>
 	
 		</section>
 
 		<section>
 			<h3>Personal projects</h3>
-			<p><strong>Rss reader</strong> — <a href="https://github.com/williamfuller/rss">code</a></p>
-			<p>The aim of this project was to build an rss aggretator entirely from scratch using onley the Go standard library. I access this app as a simple web app, running locally on a raspberry pi.</p>
-			<p><strong>Tools : </strong> Go, Nginx</p>
-			<p><strong>Nearby velib finder</strong> — <a href="https://github.com/williamfuller/velib-near-me">code</a></p>
-			<p>One click app to find the closest velib stations (with available docks or bikes) making it possible to quickly find a station while on the move. This app is super simple written in vanilla HTML/CSS/Javascript, I also wrote a simple caching server in Go as a backend to avoid polling the velib API too often.</p>
-			<p><strong>Tools : </strong> Go, Nginx, Javascript</p>
-			<p><strong>Solving wordle with information theory</strong> — <a href="https://github.com/williamfuller/wordle-bot-with-information-theory">code</a></p>
-			<p>Automated bot which attempts to solve the nytimes daily wordle puzzle using infomration theory.</p>
-			<p><strong>Tools : </strong> Python, Selenium</p>
+			<div class="flex-small-padding">
+				<div>
+					<p><strong>Rss reader</strong> — <a href="https://github.com/williamfuller/rss">code</a></p>
+					<p>Rss aggretator entirely from scratch using only the Go standard library. Deployed as a web app, running locally on a raspberry pi.</p>
+					<p><strong>Tools : </strong> Go, Nginx</p>
+				</div>
+				<div>
+					<p><strong>Nearby velib finder</strong> — <a href="https://github.com/williamfuller/velib-near-me">code</a></p>
+					<p>One click app to find the closest velib stations to quickly find a station while on the move. Super simple app written in vanilla HTML/CSS/Javascript, accompanied by a caching server in Go regularly polling the velib API.</p>
+					<p><strong>Tools : </strong> Go, Nginx, Javascript</p>
+				</div>
+				<div>
+					<p><strong>Solving wordle with information theory</strong> — <a href="https://github.com/williamfuller/wordle-bot-with-information-theory">code</a></p>
+					<p>Automated bot which attempts to solve the nytimes daily wordle puzzle using infomration theory.</p>
+					<p><strong>Tools : </strong> Python, Selenium</p>
+				</div>
+			</div>
 		</section>
-		
-		
-		<section class="flex-between">
-			<div>
-				<h3>Skills</h3>
-				<ul class="padding-left">
-				  <li>Go</li>
-				  <li>React</li>
-				  <li>PostgreSQL</li>
-				  <li>Typescript / Javascript</li>
-				  <li>Python</li>
-				  <li>C#</li>
-				  <li>Git</li>
-				  <li>Docker</li>
-				  <li>Linux</li>
-				</ul>
-			</div>
-	
-			<div>
-				<h3>Languages</h3>
-				<ul class="padding-left">
-				  <li>English (native)</li>
-				  <li>French (native)</li>
-				  <li>Spanish (intermediate)</li>
-				</ul>
-			</div>
+		<section>
+			<h3>Skills</h3>
+			<ul class="flex-between">
+				<li>Go</li>
+				<li>React</li>
+				<li>PostgreSQL</li>
+				<li>Typescript / Javascript</li>
+				<li>Python</li>
+				<li>C#</li>
+				<li>Git</li>
+				<li>Docker</li>
+				<li>Linux</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Languages</h3>
+			<ul class="flex-between">
+				<li>English (native)</li>
+				<li>French (native)</li>
+				<li>Spanish (intermediate)</li>
+			</ul>
 		</section>
 	</article>
 
