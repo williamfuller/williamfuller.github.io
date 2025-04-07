@@ -2,8 +2,8 @@
 	--color: #7CB9E8;
 	--padding-large: 1rem;
 	--padding-small: 0.3rem;
-	font-family:'Times New Roman', Times, serif;
-	font-size: 12pt;
+	font-family:Helvetica, sans-serif;
+	font-size: 10pt;
 }
 
 .subtext {
@@ -33,6 +33,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	font-size: smaller;
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
 }
 
 section {
@@ -46,7 +48,7 @@ section {
 .A4 {
 	border-top: solid 1rem var(--color);
   max-width:210mm;
-	padding: 12mm;
+	padding: 12mm 24mm;
 }
 
 .flex-center {
