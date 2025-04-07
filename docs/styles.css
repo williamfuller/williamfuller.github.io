@@ -1,7 +1,7 @@
 :root {
 	--color: #7CB9E8;
-	--padding-large: 0.75rem;
-	--padding-small: 0.25rem;
+	--padding-large: 1rem;
+	--padding-small: 0.3rem;
 	font-family:'Times New Roman', Times, serif;
 	font-size: 12pt;
 }
@@ -62,7 +62,7 @@ section {
 }
 
 .padding-left {
-	padding-left: var(--padding-large);
+	padding-left: 0.75rem;
 
 }
 
