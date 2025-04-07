@@ -13,10 +13,15 @@
 }
 
 :root {
-	--color: #9EC6F3;
+	--color: #7CB9E8;
 	--padding-large: 0.75rem;
 	--padding-small: 0.5rem;
 	font-family: "roboto", sans-serif;
+}
+
+.subtext {
+	font-size: smaller;
+	color: gray;
 }
 
 * {
@@ -31,7 +36,9 @@ a {
 
 h3 {
 	text-transform: uppercase;
-	padding-bottom: var(--padding-small);
+	margin-bottom: var(--padding-small);
+	width: 100%;
+	border-bottom: 3px solid var(--color);
 }
 
 body {
@@ -53,7 +60,7 @@ header > p {
 .A4 {
 	border-top: solid 1rem var(--color);
   max-width:210mm;
-	padding: 8mm 16mm 27mm 16mm;
+	padding: 8mm 10mm 27mm 10mm;
 }
 
 .flex-center {
@@ -74,7 +81,7 @@ header > p {
 	gap: var(--padding-large)
 }
 
-.indent {
+.padding-left {
 	padding-left: var(--padding-large)
 }
 
