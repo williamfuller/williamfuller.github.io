@@ -15,7 +15,7 @@
 :root {
 	--color: #7CB9E8;
 	--padding-large: 0.75rem;
-	--padding-small: 0.5rem;
+	--padding-small: 0.2rem;
 	font-family: "roboto", sans-serif;
 }
 
@@ -50,7 +50,6 @@ body {
 
 section {
 	padding-top: var(--padding-large);
-	padding-bottom: var(--padding-large);
 }
 
 header > p {
