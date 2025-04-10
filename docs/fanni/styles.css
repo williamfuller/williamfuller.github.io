@@ -48,7 +48,7 @@ section {
 .A4 {
 	border-top: solid 1rem var(--color);
   max-width:210mm;
-	padding: 12mm 24mm;
+	padding: 12mm 24mm 0mm 24mm;
 }
 
 .flex-center {
