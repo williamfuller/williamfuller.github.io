@@ -1,22 +1,14 @@
-@font-face {
-	font-family: "roboto";
-	src: url("Roboto-Slab-Regular.woff2") format("woff2");
-	font-weight: normal;
-	font-display: fallback ;
-}
-
-@font-face {
-	font-family: "roboto";
-	src: url("Roboto-Slab-Bold.woff2") format("woff2");
-	font-weight: bold;
-	font-display: fallback ;
-}
-
 :root {
-	--color: #9EC6F3;
-	--padding-large: 0.75rem;
-	--padding-small: 0.5rem;
-	font-family: "roboto", sans-serif;
+	--color: #7CB9E8;
+	--padding-large: 1rem;
+	--padding-small: 0.3rem;
+	font-family:Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.subtext {
+	font-size: smaller;
+	color: gray;
 }
 
 * {
@@ -31,7 +23,9 @@ a {
 
 h3 {
 	text-transform: uppercase;
-	padding-bottom: var(--padding-small);
+	margin-bottom: var(--padding-small);
+	width: 100%;
+	border-bottom: 3px solid var(--color);
 }
 
 body {
@@ -39,21 +33,22 @@ body {
 	flex-direction: column;
 	align-items: center;
 	font-size: smaller;
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
 }
 
 section {
 	padding-top: var(--padding-large);
-	padding-bottom: var(--padding-large);
 }
 
-header > p {
+.text-indent {
 	text-indent: 1.5rem;
 }
 
 .A4 {
 	border-top: solid 1rem var(--color);
   max-width:210mm;
-	padding: 8mm 16mm 27mm 16mm;
+	padding: 12mm 24mm 0mm 24mm;
 }
 
 .flex-center {
@@ -68,14 +63,9 @@ header > p {
 	gap: var(--padding-small)
 }
 
-.flex-large-padding {
-	display: flex;
-	flex-direction: column;
-	gap: var(--padding-large)
-}
+.padding-left {
+	padding-left: 0.75rem;
 
-.indent {
-	padding-left: var(--padding-large)
 }
 
 .flex-between {
@@ -83,4 +73,5 @@ header > p {
 	justify-content: space-between;
 	list-style-type: none;
 	flex-wrap: wrap;
+	gap: var(--padding-small)
 }

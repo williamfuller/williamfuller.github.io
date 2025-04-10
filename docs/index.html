@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="preload" href="styles.css" as="style" type="text/css" >
-	<link rel="preload" href="Roboto-Slab-Bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="Roboto-Slab-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="styles.css" as="style" type="text/css" >
+<link rel="preload" href="Roboto-Slab-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="Roboto-Slab-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="favicon.svg">
-	<title>William Fuller</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg">
+<title>William Fuller</title>
 </head>
 <body>
-	<div class="A4">
+	<article class="A4">
 		<header class="flex-small-padding">
 			<h1>William Fuller</h1>
-			<p>Results-oriented Software engineer with 5 years experience in full-stack web development, machine learning, and algorithm design. Proven track record of leading projects from conception to delivery, driving both product innovation and team success. Committed to continuous learning and professional growth, with a passion for tackling complex engineering challenges. Outside of work, I stay active through running, bouldering, and swimming.</p>
+			<p class="text-indent">Software engineer with 5 years experience in web development, machine learning, and algorithm design. Proven track record of leading projects from conception to delivery, driving both innovation and team success. Seeking a full-stack position to deepen technical expertise and build impactful products.</p>
 			<ul class="flex-between">
 				<li class="flex-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -30,47 +30,50 @@
 				<li><a href="https://williamfuller.eu">website</a></li>
 			</ul>
 		</header>
-	
+
 		<section>
 			<h3>Experience</h3>
-			<div class="flex-large-padding">
-				<div class="flex-small-padding">
-					<p><strong>Super G</strong></p>
+			<div class="flex-small-padding">
+				<div>
+					<p><strong>Super G</strong> — <span class="subtext">ERP solution for beer brewers and winemakers offering tools for production, inventory, invoicing and payment management.</span></p>
 					<div class="flex-between">
 						<p>Software Engineer</p>
 						<p>Feb 2023 - Present</p>
 					</div>
-					<ul class="indent">
-						<li>Founding engineer recruited to drive and accelerate end-to-end development, enhancing the product offering.</li>
-						<li>Led multiple projects from initial conception to implementation and delivery, aligning solutions with company goals and client needs.</li>
-						<li><strong>Tools</strong> : Go, PostgreSQL, React</li>
+					<ul class="padding-left">
+						<li>Founding Engineer recruited to drive and accelerate end-to-end development, enhancing the product offering. Achieving 80% growth in number of active users and doubling revenue during first year.</li>
+						<li>Responsible for invoicing and transaction handling, led multiple projects from initial conception to implementation and delivery, aligning solutions with company goals and client needs.</li>
 					</ul>
+					<p><strong>Tools</strong> : Go, PostgreSQL, React, Nginx</p>
 				</div>
 	
-				<div class="flex-small-padding">
-					<p><strong>Instem / Notocord</strong></p>
+				<div>
+					<p><strong>Instem / Notocord</strong> — <span class="subtext">Software suite of biological analyser used for pre-clinical trials in drug development.</span>
+					</p>
 					<div class="flex-between">
-						<p>Machine learning / Research Engineer</p>
+						<p>Machine Learning / Research Engineer</p>
 						<p>Oct 2020 - Jan 2023</p>
 					</div>
-					<ul class="indent">
-						<li>Developed and prototyped machine learning / deep learning models from conception in pytorch to integrated a C# production environment.</li>
-						<li>Conducted advanced research to create biological analyzers, employing deep learning and machine learning methods to support drug research and development.</li>
-						<li><strong>Tools</strong> : C#, Python, Matlab, Pytorch, ONNX</li>
+					<ul class="padding-left">
+						<li>Developed and prototyped machine learning / deep learning models from conception to production integration.</li>
+						<li>Conducted advanced research to create biological analyzers targetted at sleep scoring, using deep learning and machine learning methods to support drug research and development. Notably developed a sleep scoring algorithm achieving over 95% accuracy rate in rodents and smaller animals.</li>
 					</ul>
+					<p><strong>Tools</strong> : C#, Python, Matlab, Pytorch, ONNX</p>
 				</div>
 	
-				<div class="flex-small-padding">
-					<p><strong>Tictactrip</strong></p>
+				<div>
+					<p><strong>Tictactrip</strong> — <span class="subtext">Bus and train ticket purchasing platform offering all in one tickets combining buses and trains from different providers.</span>
+					</p>
 					<div class="flex-between">
-						<p>Data scientist / backend developer </p>
+						<p>Data Scientist / Backend Developer </p>
 						<p class="dates">Oct 2019 - Jun 2021</p>
 					</div>
-					<ul class="indent">
-						<li>Built and automated data-cleaning tools that streamlined data processing, significantly improving search accuracy and system performance, while reducing computational costs.</li>
+					<ul class="padding-left">
+						<li>Built and automated data-cleaning tools streamlining data processing, significantly improving search accuracy and system performance, while reducing computational costs. Halving the time needed to integrate new providers and generate internal stations graph.</li>
 						<li>Took full ownership of all data processing tasks relevant to integration of new provider data. Enhancing the platform's efficiency and expanding its service offerings.</li>
-						<li><strong>Tools</strong> : Python, NodeJs, PostgreSQL, Docker</li>
+						<li>Oversaw an intern, offering feedback and training to enhance their skills and knowledge.</li>
 					</ul>
+					<p><strong>Tools</strong> : Python, NodeJs, PostgreSQL, Docker</p>
 				</div>
 			</div>
 	
@@ -79,50 +82,73 @@
 		<section>
 			<h3>Education</h3>
 	
-			<div>
-				<p><strong>Imperial College London</strong></p>
-				<div class="flex-between">
-					<p>Msc Signal Processing and Communications</p>
-					<p>Oct 2018 - Oct 2019</p>
+			<div class="flex-small-padding">
+				<div>
+					<p><strong>Imperial College London</strong></p>
+					<div class="flex-between">
+						<p>Msc Signal Processing and Communications</p>
+						<p>Oct 2018 - Oct 2019</p>
+					</div>
+					<p>Adaptive Signal Processing and Machine Intelligence, Digital Image Processing, Pattern Recognition, Probability and Stochastic Processes</p>
+					<p><strong>Grade : </strong>67% — Merit</p>
 				</div>
-			</div>
 	
-			<div>
-				<p><strong>University of Kent</strong></p>
-				<div class="flex-between">
-					<p>BEng Electonic and Communications Engineering</p>
-					<p>Sept 2015 - Jul 2018</p>
+				<div>
+					<p><strong>University of Kent</strong></p>
+					<div class="flex-between">
+						<p>BEng Electronic and Communications Engineering</p>
+						<p>Sept 2015 - Jul 2018</p>
+					</div>
+					<p>Engineering Mathematics, Signals and Systems, Embedded Computer Systems, Digital Signal Processing and Control</p>
+					<p><strong>Grade : </strong> 86% — First class distinction <strong>Award : </strong> IET Prize 2018</p>
 				</div>
 			</div>
 	
 		</section>
-		
-		<section class="flex-between">
-			<div>
-				<h3>Skills</h3>
-				<ul class="indent">
-				  <li>Go</li>
-				  <li>React</li>
-				  <li>PostgreSQL</li>
-				  <li>Typescript / Javascript</li>
-				  <li>Python</li>
-				  <li>C#</li>
-				  <li>Git</li>
-				  <li>Docker</li>
-				  <li>Linux</li>
-				</ul>
-			</div>
-	
-			<div>
-				<h3>Languages</h3>
-				<ul class="indent">
-				  <li>English (native)</li>
-				  <li>French (native)</li>
-				  <li>Spanish (B1)</li>
-				</ul>
+
+		<section>
+			<h3>Personal projects</h3>
+			<div class="flex-small-padding">
+				<div>
+					<p><strong>Rss reader</strong> — <a href="https://github.com/williamfuller/rss">code</a></p>
+					<p>Rss aggretator witten entirely from scratch using only the Go standard library. Deployed as a web app, running locally on a raspberry pi.</p>
+					<p><strong>Tools : </strong> Go, Nginx</p>
+				</div>
+				<div>
+					<p><strong>Nearby velib finder</strong> — <a href="https://github.com/williamfuller/velib-near-me">code</a></p>
+					<p>One click app to find the nearest velib stations while on the move. Super simple app written in vanilla HTML/CSS/Javascript, accompanied by a caching server in Go regularly polling the velib API.</p>
+					<p><strong>Tools : </strong> Go, Nginx, Javascript</p>
+				</div>
+				<div>
+					<p><strong>Solving wordle with information theory</strong> — <a href="https://github.com/williamfuller/wordle-bot-with-information-theory">code</a></p>
+					<p>The goal here was to build a bot capable of solving the nytimes wordle puzzle using only information theory. This bot finds the solution on average in 3.12 tries.</p>
+					<p><strong>Tools : </strong> Python, Selenium</p>
+				</div>
 			</div>
 		</section>
-	</div>
+		<section>
+			<h3>Skills</h3>
+			<ul class="flex-between">
+				<li>Go</li>
+				<li>React</li>
+				<li>PostgreSQL</li>
+				<li>Typescript / Javascript</li>
+				<li>Python</li>
+				<li>C#</li>
+				<li>Git</li>
+				<li>Docker</li>
+				<li>Linux</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Languages</h3>
+			<ul class="flex-between">
+				<li>English (native)</li>
+				<li>French (native)</li>
+				<li>Spanish (intermediate)</li>
+			</ul>
+		</section>
+	</article>
 
 </body>
 </html>
