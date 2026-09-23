@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="preload" href="styles.css" as="style" type="text/css" >
+		<link rel="preload" href="Roboto-Slab-Bold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="Roboto-Slab-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="favicon.svg">
+		<title>William Fuller</title>
+	</head>
+  <body>
+		<p id="countdown"></p>
+  </body>
+	<script>
+		const milliseconds_in_second = 1000
+		const milliseconds_in_minute = 60 * milliseconds_in_second // 60 * 1000
+		const milliseconds_in_hour = 60 * milliseconds_in_minute  // 60 * 60 * 1000
+		const milliseconds_in_day = 24 * milliseconds_in_hour // 24*60*60*1000
+
+		let countdown = document.getElementById("countdown")
+
+		let timer = () => {
+			let targetDate = new Date("2026-10-23T18:00:00").getTime()
+			let currentDate = new Date().getTime()
+			let milliseconds = Math.max((targetDate - currentDate), 0)
+
+			let days = Math.trunc(milliseconds / milliseconds_in_day)
+			let remainder = milliseconds % milliseconds_in_day 
+
+			let hours = Math.trunc(remainder / milliseconds_in_hour)
+			remainder = remainder % milliseconds_in_hour
+
+			let minutes = Math.trunc(remainder / milliseconds_in_minute)
+			remainder = remainder % milliseconds_in_minute
+
+			let seconds = Math.trunc(remainder / milliseconds_in_second)
+			remainder = remainder % milliseconds_in_second
+
+			countdown.innerText = `${days} Day(s) ${hours}:${minutes}:${seconds} ${remainder}`
+		}
+
+		window.setInterval(timer, 100)
+	</script>
+</html>
