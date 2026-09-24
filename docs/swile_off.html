@@ -12,8 +12,20 @@
 		<link rel="icon" href="favicon.svg">
 		<title>William Fuller</title>
 	</head>
-  <body>
-		<p id="countdown"></p>
+	<body>
+		<section>
+		<h1>Swile exit in: </h1>
+		<div class="grid-4-cols">
+			<p id="days"></p>
+			<p id="hours"></p>
+			<p id="minutes"></p>
+			<p id="seconds"></p>
+			<p>Days</p>
+			<p>Hours</p>
+			<p>Minutes</p>
+			<p>Seconds</p>
+		</div>
+		</section>
   </body>
 	<script>
 		const milliseconds_in_second = 1000
@@ -21,7 +33,10 @@
 		const milliseconds_in_hour = 60 * milliseconds_in_minute  // 60 * 60 * 1000
 		const milliseconds_in_day = 24 * milliseconds_in_hour // 24*60*60*1000
 
-		let countdown = document.getElementById("countdown")
+		let days_el = document.getElementById("days")
+		let hours_el = document.getElementById("hours")
+		let minutes_el = document.getElementById("minutes")
+		let seconds_el = document.getElementById("seconds")
 
 		let timer = () => {
 			let targetDate = new Date("2026-10-23T18:00:00").getTime()
@@ -40,7 +55,10 @@
 			let seconds = Math.trunc(remainder / milliseconds_in_second)
 			remainder = remainder % milliseconds_in_second
 
-			countdown.innerText = `${days} Day(s) ${hours}:${minutes}:${seconds} ${remainder}`
+			days_el.innerText = `${days}`
+			hours_el.innerText = `${hours}`
+			minutes_el.innerText = `${minutes}`
+			seconds_el.innerText = `${seconds}`
 		}
 
 		window.setInterval(timer, 100)
