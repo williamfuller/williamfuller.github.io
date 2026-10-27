@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+
+:root {
+	--padding-small: 1rem;
+}
+
+h1 {
+	font-family: serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section, nav {
+	padding-inline: var(--padding-small);
+}
+
+nav > * {
+	text-align: center;
+}
+
+h2 {
+	text-decoration: underline;
+	padding-bottom: var(--padding-small);
+}
+
+.image-grid {
+	display: flex;
+	gap: var(--padding-small);
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+.image-grid > img:hover {
+	border: solid gray 0.5rem;
+}
