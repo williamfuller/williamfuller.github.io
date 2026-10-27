@@ -11,6 +11,10 @@
 	--padding-small: 1rem;
 }
 
+body {
+	background-color: #fddeea;
+}
+
 h1 {
 	font-family: serif;
 }
@@ -46,8 +50,4 @@ h2 {
 	gap: var(--padding-small);
 	flex-flow: wrap;
 	justify-content: center;
-}
-
-.image-grid > img:hover {
-	border: solid gray 0.5rem;
 }
